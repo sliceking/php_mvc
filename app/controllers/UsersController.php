@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Core\App;
+
 class UsersController
 {
     public function index()
@@ -17,6 +21,6 @@ class UsersController
 
         ]);
 
-        header('Location: /users');
+        return redirect('users');
     }
 }
