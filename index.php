@@ -1,6 +1,8 @@
 <?php
 
-$query = require 'core/bootstrap.php';
+require 'vendor/autoload.php';
+
+require 'core/bootstrap.php';
 
 $uri = trim($_SERVER['REQUEST_URI'], '/');
 
